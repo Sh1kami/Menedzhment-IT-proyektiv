@@ -13,11 +13,11 @@
     <p class="eyebrow">Університетська майстерня</p>
     <h1>Забронюйте обладнання майстерні</h1>
     <p class="intro">Перевірте допуск, оберіть час і надішліть заявку майстру.</p>
-    <form id="signup">
+    <form id="signup" class="signup">
       <label for="email">Навчальна адреса</label>
       <div class="control"><input id="email" type="email" autocomplete="off" placeholder="student@example.test" required><button>Спробувати демопідписку</button></div>
       <p class="hint">Локальне демо. Використовуйте лише домен example.test.</p>
-      <p id="status" role="status"></p>
+      <p class="signup-status" role="status"></p>
     </form>
   </div>
   <div class="calendar">
@@ -32,9 +32,31 @@
   </div>
 </section>
 <section id="flow" class="flow"><div class="wrap">
-  <h2>Від пошуку до рішення майстра</h2>
-  <ol><li><b>Знайдіть обладнання.</b> Звірте вимоги й доступні дати.</li><li><b>Виберіть сеанс.</b> Надішліть одну заявку на вільний час.</li><li><b>Перевірте статус.</b> Майстер підтвердить або пояснить відмову.</li></ol>
-  <div class="event"><h3>Демонстрація 1 грудня о 10:00</h3><p id="countdown">Час за Києвом</p><a href="#signup">Повернутися до демопідписки</a></div>
+  <div class="problem">
+    <div><h2>Розклад і допуски в різних місцях</h2><p>Студент шукає вільний час у чаті. Майстер окремо звіряє таблицю записів та інструктажі.</p></div>
+    <div><h2>Одна заявка від пошуку до рішення</h2><p>LabQueue показує обладнання, вимоги та доступні сеанси. Майстер розглядає заявку, а студент бачить її статус.</p></div>
+  </div>
+  <h2>Можливості пілота</h2>
+  <div class="features">
+    <article><h3>Каталог обладнання</h3><p>Пошук за майстернею і датою сеансу.</p></article>
+    <article><h3>Перевірка допуску</h3><p>Умови інструктажу видимі до подання заявки.</p></article>
+    <article><h3>Один запис на сеанс</h3><p>Вільний час резервується для однієї активної заявки.</p></article>
+    <article><h3>Рішення майстра</h3><p>Підтвердження, причина відмови або скасування у статусі.</p></article>
+  </div>
+</div></section>
+<section class="trust"><div class="wrap">
+  <h2>Що можна перевірити до пілота</h2>
+  <p>Демонстраційний календар показує вільні й зайняті сеанси. Планову архітектуру на FastAPI та PostgreSQL описано в <a href="https://github.com/Sh1kami/Menedzhment-IT-proyektiv#менеджмент-іт-проєктів">матеріалах проєкту</a>.</p>
+</div></section>
+<section class="event"><div class="wrap">
+  <h2>Плановий запуск пілота 1 грудня о 10:00</h2>
+  <p id="countdown">Час за Києвом</p>
+  <form class="signup">
+    <label for="email-final">Навчальна адреса</label>
+    <div class="control"><input id="email-final" type="email" autocomplete="off" placeholder="student@example.test" required><button>Спробувати демопідписку</button></div>
+    <p class="hint">Адреса example.test додається до локального списку пілота.</p>
+    <p class="signup-status" role="status"></p>
+  </form>
 </div></section>
 </main>
 <footer><div class="wrap nav"><a class="brand" href="#">LabQueue</a><a href="community.html">Навчальна спільнота</a></div></footer>

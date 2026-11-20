@@ -25,8 +25,8 @@ input,button{min-height:48px;border-radius:9px;padding:9px 14px;font:inherit}
 input{background:white;border:1px solid #809185;width:min(100%,245px)}
 button{border:1px solid transparent;background:var(--accent);color:var(--ink);font-weight:700;cursor:pointer;transition:transform .16s}
 button:hover{transform:translateY(-2px)}button:active{transform:translateY(1px)}
-.hint,#status{font-size:.92rem;margin-block:8px;color:var(--muted)}
-#status{min-height:1.35em;font-weight:650}#status.error{color:#8c2b1c}
+.hint,.signup-status{font-size:.92rem;margin-block:8px;color:var(--muted)}
+.signup-status{min-height:1.35em;font-weight:650}.signup-status.error{color:#8c2b1c}
 .calendar{border:1px solid #c6d3c5;border-radius:22px;background:#fff;padding:clamp(20px,4vw,45px);box-shadow:0 24px 60px #273c2312;min-width:0}
 .calendar h2{margin-bottom:4px}.calendar p{margin-top:0}
 .slots{display:grid;gap:8px;margin-block:24px}
@@ -34,8 +34,24 @@ button:hover{transform:translateY(-2px)}button:active{transform:translateY(1px)}
 .slots strong{color:#355e34}
 .training{color:var(--muted);font-size:.92rem;margin-bottom:0}
 .flow{background:#e8efe1;min-height:90svh;display:grid;align-items:center;padding-block:64px}
-.flow li{margin-bottom:12px}.event{margin-top:48px}
+.problem,.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.problem{margin-bottom:38px}
+.problem>div,.features>article{border:1px solid var(--line);border-radius:12px;background:white;padding:20px}
+.problem p,.features p{margin-bottom:0}
+.problem h2{font-size:clamp(1.35rem,3vw,2.15rem)}
+.features{grid-template-columns:repeat(4,minmax(0,1fr))}
+.features h3{font-size:1.12rem}
+.trust,.event{padding-block:70px}
+.trust p{max-width:65ch}.event{background:#e8efe1}
 .community{max-width:760px;min-height:75svh;padding-block:58px}
 .community article{border-top:1px solid var(--line);padding-block:12px}
+.community form{display:grid;gap:8px;max-width:580px}
+.community form label{margin:0}
+.community select,.community textarea{border:1px solid #809185;background:#fff;border-radius:9px;padding:10px 12px;font:inherit}
+.community textarea{resize:vertical}
+.community form button{justify-self:start}
+.community #feedback-status{margin:0;min-height:1.4em}
+.community #feedback-list li{overflow-wrap:anywhere;margin-block:12px}
 @media(max-width:760px){.hero{grid-template-columns:1fr;padding-block:45px;gap:24px}.nav{font-size:.93rem}h1{max-width:13ch} .control> *{width:100%}}
+@media(max-width:760px){.problem,.features{grid-template-columns:1fr}.trust,.event{padding-block:48px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}[data-enter]{animation:none}button{transition:none}}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk" data-type="software"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="page-type" content="software"><meta name="site-kind" content="software"><title>Спільнота LabQueue</title><link rel="stylesheet" href="site.css"></head>
+<html lang="uk" data-type="software"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="page-type" content="software"><meta name="site-kind" content="software"><title>Спільнота LabQueue</title><link rel="stylesheet" href="site.css"><script src="community.js" defer></script></head>
 <body><header><div class="wrap nav"><a class="brand" href="index.html">LabQueue</a></div></header>
 <main class="wrap community" data-enter><h1>Спільнота LabQueue</h1><p>Навчальна модель діалогу для пілота. Репліки умовні.</p>
 <h2>Правила</h2><ul><li>У повідомленні назвіть обладнання і сценарій.</li><li>У прикладі використовуйте навчальні дані.</li><li>PM групує пропозиції і щотижня оновлює журнал рішень.</li></ul>
@@ -7,4 +7,17 @@
 <article><h3>Координатор майстерні</h3><p>Опишіть, як зараз підтверджується доступ до 3D-принтера і хто може його видати.</p></article>
 <article><h3>Студент</h3><p>Після скасування сеансу хочу побачити, що час знову доступний у календарі.</p></article>
 <article><h3>Менеджер пілота</h3><p>Перевіримо цей сценарій у наступному демо. У відгуку вкажіть очікуваний і фактичний результат.</p></article>
+<section aria-labelledby="feedback-title">
+<h2 id="feedback-title">Записи пілота</h2>
+<form id="feedback">
+  <label for="scenario">Сценарій</label>
+  <select id="scenario" required><option value="">Оберіть сценарій</option><option>Каталог обладнання</option><option>Перевірка допуску</option><option>Заявка на сеанс</option><option>Скасування заявки</option></select>
+  <label for="feedback-text">Що очікували і що сталося</label>
+  <textarea id="feedback-text" rows="4" maxlength="500" required aria-describedby="feedback-hint"></textarea>
+  <p id="feedback-hint" class="hint">Записи зберігаються в цьому браузері. Використовуйте навчальні дані.</p>
+  <button type="submit">Зберегти запис</button>
+  <p id="feedback-status" role="status"></p>
+</form>
+<ul id="feedback-list" aria-label="Збережені записи"></ul>
+</section>
 </main></body></html>
