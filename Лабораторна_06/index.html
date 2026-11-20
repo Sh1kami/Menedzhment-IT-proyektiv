@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk" data-type="software">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="page-type" content="software"><meta name="site-kind" content="software">
+<title>LabQueue — бронювання обладнання</title><link rel="stylesheet" href="site.css"><script src="site.js" defer></script>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="index.html">LabQueue</a><nav aria-label="Основна навігація"><a href="#flow">Як це працює</a><a href="community.html">Спільнота</a></nav></div></header>
+<main>
+<section class="hero wrap" data-enter>
+  <div>
+    <p class="eyebrow">Університетська майстерня</p>
+    <h1>Забронюйте обладнання майстерні</h1>
+    <p class="intro">Перевірте допуск, оберіть час і надішліть заявку майстру.</p>
+    <form id="signup">
+      <label for="email">Навчальна адреса</label>
+      <div class="control"><input id="email" type="email" autocomplete="off" placeholder="student@example.test" required><button>Спробувати демопідписку</button></div>
+      <p class="hint">Локальне демо. Використовуйте лише домен example.test.</p>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+  <div class="calendar">
+     <p class="eyebrow">Демонстраційний календар</p><h2>3D-принтер</h2>
+     <p>Вівторок, 1 грудня · Київ</p>
+     <div class="slots" aria-label="Приклади сеансів">
+       <span><time>10:30</time> <strong>Вільно</strong></span>
+       <span><time>11:30</time> Зайнято</span>
+       <span><time>14:00</time> <strong>Вільно</strong></span>
+     </div>
+     <p class="training">Для роботи потрібен чинний інструктаж.</p>
+  </div>
+</section>
+<section id="flow" class="flow"><div class="wrap">
+  <h2>Від пошуку до рішення майстра</h2>
+  <ol><li><b>Знайдіть обладнання.</b> Звірте вимоги й доступні дати.</li><li><b>Виберіть сеанс.</b> Надішліть одну заявку на вільний час.</li><li><b>Перевірте статус.</b> Майстер підтвердить або пояснить відмову.</li></ol>
+  <div class="event"><h3>Демонстрація 1 грудня о 10:00</h3><p id="countdown">Час за Києвом</p><a href="#signup">Повернутися до демопідписки</a></div>
+</div></section>
+</main>
+<footer><div class="wrap nav"><a class="brand" href="#">LabQueue</a><a href="community.html">Навчальна спільнота</a></div></footer>
+</body></html>

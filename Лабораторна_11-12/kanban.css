@@ -1,0 +1,12 @@
+:root{color-scheme:light}*{box-sizing:border-box}
+body{margin:0;background:#f2f4ef;color:#17241e;font:16px/1.5 "Segoe UI",system-ui,sans-serif}
+main{width:min(1360px,calc(100% - 32px));margin:30px auto}header,.filters{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}header{border-bottom:1px solid #c4cfbd}h1{margin:0 0 14px}header p{margin:0;color:#4a6051}
+.filters{justify-content:flex-start;margin-top:20px}input,select{font:inherit;padding:7px;border:1px solid #8a9f90;border-radius:7px;background:white}
+#message{min-height:1.5em;margin-block:8px;color:#4a6051}
+#columns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+section{background:#e4ebe0;border-radius:12px;padding:12px;min-width:0}
+section h2{font-size:1.1rem;margin-top:0}
+article{background:white;border:1px solid #cad5c7;border-radius:10px;padding:12px;margin-block:8px;overflow-wrap:anywhere}
+article h3{font-size:1rem;margin:4px 0}article p,article label{font-size:.85rem;margin-block:5px}article select{max-width:100%}
+@media(max-width:880px){#columns{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){#columns{grid-template-columns:1fr}}
